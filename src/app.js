@@ -17,6 +17,7 @@ window.onload = function() {
     "during my lunch",
     "while I was praying"
   ];
+  
   function randomItem(array) {
     let numeroAleatorio = Math.random() * array.length;
     let numeroEntero = Math.floor(numeroAleatorio);
@@ -31,7 +32,6 @@ window.onload = function() {
     randomItem(what) +
     " " +
     randomItem(when);
-  console.log(excuse);
 
   document.querySelector("#excuse").innerHTML = excuse;
 };
